@@ -116,7 +116,7 @@ To run on a locked-down Windows workstation that blocks installers:
     cp acoustic_modem_aux.py portable_env/
     zip -9 -r portable.zip portable_env/
 
-Transfer the zip (split into pieces) if needed due to email limits) and
+Transfer the zip (split into pieces if needed due to email limits) and
 extract on the target machine. Run with:
 
     .\python acoustic_modem_aux.py tx -q 5 --ecc sqs16 "HELLO"

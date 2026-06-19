@@ -35,23 +35,33 @@ Receive from a pre-recorded WAV file:
     python acoustic_modem_aux.py rx -q 5 --ecc sqs16 -i captured.wav
 
 
-OPTIONS
--------
+## OPTIONS
 
--q         Singer plane order (2, 3, 5, or 7). Default: 5
---ecc      Error-correcting code. Choices:
-               hamming    [7,4,3]  baseline, good throughput
-               selfdual   [8,4,4]  detects double errors
-               qr         [7,3,4]  strong distance for rate
-               pg23       [13,9,3] high rate, projective plane
-               sts9       [9,5,3]  compact, affine design
-               sts15      [15,11,3] high density, PG(3,2)
-               sqs16      [16,11,4] flagship, best overall balance
-           Default: sqs16
---extended  Use 16-bit header for payloads larger than 255 bytes
--o          Output WAV filename (tx only). Default: transmit.wav
--i          Input source (rx only). "MIC" for live recording, or a WAV path
--d          Recording duration in seconds (rx only). Default: 25
+* **`-q`**
+    Singer plane order (2, 3, 5, or 7). Default: 5
+
+* **`--ecc`**
+    Error-correcting code. Choices:
+    * `hamming` [7,4,3] (baseline)
+    * `selfdual` [8,4,4] (detects double errors)
+    * `qr` [7,3,4] (strong distance for rate)
+    * `pg23` [13,9,3] (high rate, projective plane)
+    * `sts9` [9,5,3] (compact, affine design)
+    * `sts15` [15,11,3] (high density, PG(3,2))
+    * `sqs16` [16,11,4] (flagship, best overall balance). 
+    *Default: sqs16*
+
+* **`--extended`**
+    Use 16-bit header for payloads larger than 255 bytes
+
+* **`-o`**
+    Output WAV filename (tx only). Default: transmit.wav
+
+* **`-i`**
+    Input source (rx only). "MIC" for live recording, or a WAV path
+
+* **`-d`**
+    Recording duration in seconds (rx only). Default: 25
 
 
 QUICK TEST

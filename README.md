@@ -105,3 +105,18 @@ without issue. The signal is inaudible to most adults. For best results
 at range, keep the transmitter volume high but not clipping, and place
 the receiver microphone with a clear line of sight to the speaker.
 
+
+PORTABLE DEPLOYMENT
+-------------------
+
+To run on a locked-down Windows workstation that blocks installers:
+
+    python -m venv --copies portable_env
+    portable_env/bin/pip install numpy scipy
+    cp acoustic_modem_aux.py portable_env/
+    zip -9 -r portable.zip portable_env/
+
+Transfer the zip (split into chunks if needed due to email limits) and
+extract on the target machine. Run with:
+
+    .\python acoustic_modem_aux.py tx -q 5 --ecc sqs16 "HELLO"

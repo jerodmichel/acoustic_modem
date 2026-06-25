@@ -26,11 +26,11 @@ Transmit a file:
 
     python acoustic_modem_aux.py tx -q 5 --ecc sqs16 -f payload.txt -o transmit.wav
 
-Receive from microphone:
+Receive via microphone:
 
     python acoustic_modem_aux.py rx -q 5 --ecc sqs16 -i MIC -d 30
 
-Receive from a pre-recorded WAV file:
+Receive via pre-recorded WAV file:
 
     python acoustic_modem_aux.py rx -q 5 --ecc sqs16 -i captured.wav
 

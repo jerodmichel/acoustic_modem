@@ -476,11 +476,11 @@ A few details worth noting. The header is an 8-bit unsigned integer giving the m
 This transceiver works. The Hamming code (with $q = 5$) pushes data reliably across a quiet room and tolerates moderate ambient noise. It is limited to two frequencies (one bit per symbol) and a single error-correcting code. This will all be scaled up in the next section.
 
 
---[ 6. Multi-Level Signalling and Multiple ECC's
+## 6. Multi-Level Signalling and Multiple ECC's
 
 The transceiver from Section 5 works, but not in too noisy of a room. Two obvious shortcomings are that it maps only one bit to a single tone, and it corrects only single errors.
 
-----[ 6.1 4-Ary Frequency Shift Keying
+### 6.1 4-Ary Frequency Shift Keying
 
 Where BFSK maps one bit to one of two tones, 4-FSK maps two bits to one of four tones, doubling the bit rate for the same symbol duration. We can map each bit pair $(b_0, b_1)$ to a tone index via:
 

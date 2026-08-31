@@ -156,7 +156,7 @@ Using ADPCM is practical when working inside a noisy room with potentially high 
 
 It's also worth mentioning that once acoustic channels were established as a real threat (recall badBIOS), Guri et al. responded with MOSQUITO [7], a manipulation of the Realtek audio chipset which reversed the impedance of the audio jack, thereby turning a passive desktop speaker (or headphone) into a microphone and allowing for two-way communication.
 
---[ 3. Difference Sets, Correlation and the Preamble
+## 3. Difference Sets, Correlation and the Preamble
 
 Let $\mathbb{Z}_7 = \{0, 1, \dots, 6\}$ be the set of integers modulo $7$. Consider the subset $\{1, 2, 4\}$ of $\mathbb{Z}_7$. Notice by taking all possible differences modulo $7$ between distinct pairs from this subset, we get back each nonzero member of $\mathbb{Z}_7$ exactly once:
 
@@ -240,7 +240,7 @@ is modulated and prepended to every transmission. On the receiving end, the
 entire synchronization problem reduces to running a sliding
 cross-correlation and looking for the spike.
 
---[ 4. t-Designs, EC Codes, and Encoding/Decoding
+## 4. t-Designs, EC Codes, and Encoding/Decoding
 
 Consider the following subsets of the set $\mathbb{Z}_7 = \{0, 1, \dots, 6\}$:
 

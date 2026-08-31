@@ -124,8 +124,8 @@ extract on the target machine. Run with:
 <br>
 <br>
     
-THE STORY BEHIND ITS CONSTRUCTION:
-==================================
+THE STORY BEHIND THIS:
+======================
 
 # Covert Data Exfiltration in Hospitals
 **Author:** Jerod Michel

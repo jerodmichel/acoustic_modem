@@ -508,7 +508,7 @@ def modulate_4ary(bits):
 
 Note that with the frequencies sitting between 17 and 18.5 kHz the modem is inaudible to most adults and can avoid spectral interference from human speech and ambient noise. It also stays well within the band of audio hardware (which typically handles 48 kHz sample-rate signals up to 20 kHz without trouble).
 
-----[ 6.2 Multiple ECC's
+### 6.2 Multiple ECC's
 
 The Hamming $[7,4,3]$ code from Section 5 helped us to get a basic transceiver, but it limits us in the sense that in a quieter room we can trade correction capability for speed, and in a noisy room we will need more redundancy. I went ahead and implemented seven EC codes, each coming from a $t$-design or finite geometry, and each able to plug into the same encode/decode interface.
 
@@ -647,7 +647,6 @@ def execute_tx(args):
     crc_val = zlib.crc32(raw_message.encode('utf-8'))
     crc_hex = f"{crc_val:08x}"
     sys.stderr.write(f"[*] Payload CRC32 Checksum: {crc_hex}\n")
-```
 
     # 2. Append checksum, then the stop byte
     message_with_crc = raw_message + crc_hex
@@ -892,7 +891,7 @@ deliberate as the clean message can be piped elsewhere without having to
 grep any of the lines.
 
 
-----[ 7.4 The Finished Modem
+### 7.4 The Finished Modem
 
 The CLI uses argparse to accept two subcommands, tx and rx, each having
 their own flags. This looks like:

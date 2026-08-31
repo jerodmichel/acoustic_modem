@@ -121,9 +121,10 @@ extract on the target machine. Run with:
 
     .\python acoustic_modem_aux.py tx -q 5 --ecc sqs16 "HELLO"
     
+<br>
+<br>
     
-    
-## THE STORY BEHIND ITS CONSTRUCTION: Covert Data Exfiltration in Hospitals
+THE STORY BEHIND ITS CONSTRUCTION: Covert Data Exfiltration in Hospitals
 ===========================================================================
 
 # Covert Data Exfiltration in Hospitals
@@ -247,7 +248,9 @@ $$ \{1, 2, 4\} \quad \{2, 3, 5\} \quad \{3, 4, 6\} \quad \{0, 4, 5\} \quad \{1, 
 
 Notice that any pair of points from $\mathbb{Z}_7$ appears in exactly one of the above subsets, and any two of the subsets intersect in exactly one point.
 
-![Fano Plane Diagram Placeholder](fano.png)
+<p align="center">
+  <img src="fano.png" alt="Figure description" width="500">
+</p>
 
 This simple geometric structure, called the Fano plane, is a nice pivot. Notice it is a special case of the following more general object.
 
@@ -998,17 +1001,17 @@ Thanks also to Gemini and DeepSeek for helping me write this paper.
 
 ## 10. References
 
-[1] Assmus, E.F. and Key, J.D. *Designs and Their Codes*. Cambridge University Press, 1992.
-[2] Colbourn, C.J. and Dinitz, J.H. *Handbook of Combinatorial Designs* (2nd ed.). Chapman & Hall/CRC, 2007.
-[3] Golomb, S.W. and Gong, G. *Signal Design for Good Correlation*. Cambridge University Press, 2005.
-[4] Guri, M. POWER-SUPPLaY: Leaking data from air-gapped systems by turning the power-supplies into speakers. *arXiv*, 2020. https://doi.org/10.48550/arxiv.2005.00395
-[5] Guri, M., Solewicz, Y., Daidakulov, A., & Elovici, Y. DiskFiltration: Data exfiltration from speakerless air-gapped computers via covert hard drive noise. *arXiv*, 2016. https://doi.org/10.48550/arxiv.1608.03431
-[6] Guri, M., Solewicz, Y., Daidakulov, A., & Elovici, Y. Fansmitter: Acoustic data exfiltration from (speakerless) air-gapped computers. *arXiv*, 2016. https://doi.org/10.48550/arxiv.1606.05915
-[7] Guri, M., Solewicz, Y., Daidakulov, A., & Elovici, Y. MOSQUITO: Covert ultrasonic transmissions between two air-gapped computers using speaker-to-speaker communication. *IEEE QRS*, 2018.
-[8] Hanspach, M., and Goetz, M. On covert acoustical mesh networks in air. *Journal of Communications*, 8(11), 758–767, 2013. https://doi.org/10.12720/jcm.8.11.758-767
-[9] Huffman, W.C. and Pless, V. *Fundamentals of Error-Correcting Codes*. Cambridge University Press, 2003.
-[10] Moorhouse, G.E. *Incidence Geometry*, 2007. http://www.uwyo.edu/moorhouse/handouts/incidence_geometry.pdf
-[11] Stinson, D.R. *Combinatorial Designs: Constructions and Analysis*. Springer, 2004.
+[1] Assmus, E.F. and Key, J.D. *Designs and Their Codes*. Cambridge University Press, 1992.<br>
+[2] Colbourn, C.J. and Dinitz, J.H. *Handbook of Combinatorial Designs* (2nd ed.). Chapman & Hall/CRC, 2007.<br>
+[3] Golomb, S.W. and Gong, G. *Signal Design for Good Correlation*. Cambridge University Press, 2005.<br>
+[4] Guri, M. POWER-SUPPLaY: Leaking data from air-gapped systems by turning the power-supplies into speakers. *arXiv*, 2020. https://doi.org/10.48550/arxiv.2005.00395<br>
+[5] Guri, M., Solewicz, Y., Daidakulov, A., & Elovici, Y. DiskFiltration: Data exfiltration from speakerless air-gapped computers via covert hard drive noise. *arXiv*, 2016. https://doi.org/10.48550/arxiv.1608.03431<br>
+[6] Guri, M., Solewicz, Y., Daidakulov, A., & Elovici, Y. Fansmitter: Acoustic data exfiltration from (speakerless) air-gapped computers. *arXiv*, 2016. https://doi.org/10.48550/arxiv.1606.05915<br>
+[7] Guri, M., Solewicz, Y., Daidakulov, A., & Elovici, Y. MOSQUITO: Covert ultrasonic transmissions between two air-gapped computers using speaker-to-speaker communication. *IEEE QRS*, 2018.<br>
+[8] Hanspach, M., and Goetz, M. On covert acoustical mesh networks in air. *Journal of Communications*, 8(11), 758–767, 2013. https://doi.org/10.12720/jcm.8.11.758-767<br>
+[9] Huffman, W.C. and Pless, V. *Fundamentals of Error-Correcting Codes*. Cambridge University Press, 2003.<br>
+[10] Moorhouse, G.E. *Incidence Geometry*, 2007. http://www.uwyo.edu/moorhouse/handouts/incidence_geometry.pdf<br>
+[11] Stinson, D.R. *Combinatorial Designs: Constructions and Analysis*. Springer, 2004.<br>
 [12] Storer, T. *Cyclotomy and Difference Sets*. Markham Publishing Company, 1967.
 
 
